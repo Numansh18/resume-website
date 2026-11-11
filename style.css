@@ -1,0 +1,125 @@
+/* Color palette
+   Dark navy: #1f2a44
+   Teal: #2a9d8f
+   Light gray: #f4f6f8
+   White: #ffffff
+*/
+
+/* Element selectors */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #1f2a44;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 28px;
+  color: #2a9d8f;
+  border-bottom: 2px solid #2a9d8f;
+  padding-bottom: 6px;
+}
+
+/* Navigation bar with flexbox and sticky position */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #1f2a44;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Pseudo selector */
+nav a:hover {
+  color: #2a9d8f;
+}
+
+/* ID selector */
+#top {
+  background-color: #1f2a44;
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Class selectors */
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #2a9d8f;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #21867a;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* Cards with grid layout */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card:hover {
+  border-top: 4px solid #2a9d8f;
+}
+
+footer {
+  background-color: #1f2a44;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
